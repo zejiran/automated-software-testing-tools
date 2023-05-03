@@ -1,6 +1,6 @@
 # Automated Software Testing Tools
 
-Performing automated testing on web applications.
+Tools for performing automated software testing on web applications.
 
 ## License
 
