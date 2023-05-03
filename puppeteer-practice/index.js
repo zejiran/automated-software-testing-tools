@@ -7,10 +7,10 @@ const puppeteer = require('puppeteer');
     await page.goto('https://angular-6-registration-login-example.stackblitz.io/register');
 
     await new Promise(r => setTimeout(r, 7000));
-    await page.screenshot({ path: './pagina.png' })
+    await page.screenshot({ path: './page.png' })
     await page.click('button')
     await new Promise(r => setTimeout(r, 9000));
-    await page.screenshot({ path: './pagina2.png' })
+    await page.screenshot({ path: './page2.png' })
     console.log('Project loaded')
     //Interactuar con la aplicación web
     await page.click('a.btn.btn-link')
