@@ -1,21 +1,21 @@
-// Importar Playwright
+// Import Playwright library
 const playwright = require('playwright');
 
 const url = 'https://angular-6-registration-login-example.stackblitz.io/register';
 
-// Función flecha asíncrona
+// Async arrow function
 (async () => {
-    // Definir los navegadores en los que se quiere hacer la prueba
+    // Define the browsers to test
     for (const browserType of ['chromium', 'firefox', 'webkit']) {
-        // Contenido de la prueba
+        // Test content
         console.log(browserType + '-------------------------------------------')
 
-        // Creación del objeto browser, el contexto del mismo y el objeto page para manejar la página
+        // Create browser object, context, and page object to handle the page
         const browser = await playwright[browserType].launch();
         const context = await browser.newContext();
         const page = await context.newPage();
 
-        // Abrir la URL a probar en la página y cargar el proyecto en una SPA
+        // Open URL to test and load project in a SPA
         await page.goto(url);
         await new Promise(r => setTimeout(r, 7000));
         await page.screenshot({ path: './pagina.png' })
@@ -24,8 +24,7 @@ const url = 'https://angular-6-registration-login-example.stackblitz.io/register
         await page.screenshot({ path: './pagina2.png' })
         console.log('Project loaded')
 
-
-        // Interactuar con la aplicación web
+        // Interact with the web application
         await page.click('css=a.btn.btn-link')
         console.log(`Clicked "cancel". URL is now ${page.url()}`)
 
@@ -61,8 +60,8 @@ const url = 'https://angular-6-registration-login-example.stackblitz.io/register
         await page.screenshot({ path: './after-login.png' })
         console.log(`Logged in. Your user was ${feedback ? 'successfully' : 'not'} created`)
 
-        // Finalizar la prueba
+        // End of test
         await browser.close();
     }
     return;
-})(); // Llamado propio de la función
+})(); // Call of the function itself
