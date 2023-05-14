@@ -1,0 +1,16 @@
+{
+  "name": "resemblejs-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zejiran",
+  "license": "MIT",
+  "dependencies": {
+    "canvas": "^2.11.2",
+    "playwright": "^1.33.0",
+    "resemblejs": "^4.1.0"
+  }
+}
