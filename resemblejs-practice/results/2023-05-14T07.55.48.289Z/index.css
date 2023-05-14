@@ -1,0 +1,53 @@
+.browser {
+    position: relative;
+    margin: 5px auto;
+    padding: 10px 30px;
+    background-color: #FAFAFA;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    min-height: 40px;
+    -webkit-break-inside: avoid;
+    break-inside: avoid;
+}
+
+.btitle {
+    padding: 5px 0;
+}
+
+.imgline {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.imgcontainer {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0 25px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.imgname {
+    text-align: center;
+    font-family: latoregular;
+    color: #787878;
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
+    padding: 5px 0;
+    padding-bottom: 15px;
+    font-size: 12px;
+}
+
+.img2 {
+    width: auto;
+    max-width: 100%;
+    max-height: 400px;
+}
+
+.imgfull {
+    width: 100%
+}
