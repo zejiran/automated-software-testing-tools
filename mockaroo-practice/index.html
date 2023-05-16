@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Data visualizer</title>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Random Data Reader</h1>
+            <p>This website allows you to visualize randomly generated data in CSV format.</p>
+        </div>
+    </div>
+    <div class="container justify-content-center">
+        <label for="input-file">Enter data from a CSV file:</label><br>
+        <input id="input-file" name="input-file" type="file" accept=".csv" /><br>
+        <input id="load" type="submit" />
+        <hr>
+        <label for="fetch-button">Or fetch data from an API</label>
+        <input id="fetch-button" name="fetch-button" type="submit" />
+        <hr>
+        <div id="visualization-area" hidden>
+            <p id="success-msg"></p>
+            <p id="row-count"></p>
+            <div class="table-responsive">
+                <table id="content" class="table"></table>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./scripts.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- first Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
